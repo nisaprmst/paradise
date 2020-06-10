@@ -16,4 +16,6 @@
 
   $('.dropdown-trigger').dropdown();
 
-
+  $(document).on('turbolinks:load', function() {
+    $('.dropdown-trigger').dropdown();
+  });
