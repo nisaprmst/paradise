@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= stylesheet_link_tag "style" %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+  <ul id="dropdown1" class="dropdown-content">
+    <li class="red-text text-lighten-2">
+      <%= link_to "Summary & Evaluation", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
+    </li>
+    <li>
+      <%= link_to "Questionnaire - General", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
+    </li>
+    <li>
+      <%= link_to "Questionnaire - PARADiSE Market", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
+    </li>
+    <li>
+      <%= link_to "Questionnaire - No Traveling Market", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
+    </li>
+    <li>
+      <%= link_to "In-Depth-Interview", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
+    </li>
+  </ul>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper">
+    <%= link_to "PARADiSE - By Local From Local", {:controller => 'homepage', :action => "index" }, {:class => "brand-logo", :id => "logo-container", :style => "padding-left:2%" } %>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <%= link_to "Home", {:controller => 'homepage', :action => "index" } %>
+        </li>
+        <li>
+          <%= link_to "Features", {:controller => 'homepage', :action => "index" } %>
+        </li>
+        <li>
+          <%= link_to "MVP", {:controller => 'homepage', :action => "index" } %>
+        </li>
+        <li>
+          <%= link_to "Feasibility", {:controller => 'homepage', :action => "index" } %>
+        </li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Market Survey<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li>
+          <%= link_to "About Us", {:controller => 'homepage', :action => "index" } %>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <%= link_to "Home", {:controller => 'homepage', :action => "index" }, {:class => "brand-logo", :id => "logo-container" } %>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+      <h1 style="opacity:0">weird<//h1>
+        <h1 class="center red-text text-lighten-2">PARADiSE</h1>
+        <div class="row center">
+        <br><br>
+          <h5 class="header col s12 light">BY LOCAL, FROM LOCAL</h5>
+        </div>
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax">
+        <%= image_tag("background1.jpg")  %>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m5">
+            <br><br>
+            <br><br>
+          <%= link_to image_tag("prototype.png", :size => "250x400"), {:action => 'index', :controller => 'homepage'}%>
+        </div>
+        <div class="col s12 m7">
+          <div class="icon-block">
+            <br><br>
+            <h2 class=" center red-text text-lighten-2"><i class="medium material-icons">home</i></h2>
+            <h6 class="center" style="font-weight: bold">BY LOCAL, FROM LOCAL</h6>
+
+            <p class="light center-align" style="font-style: italic">PARADiES is a socioeconomic business-sharing that empowers local people to design and sell trips online while making it easy for tourists to find and leave these amazing and wild experiences so in other words we're turning unemployed local people into successful touristic entrepreneurs in their own villages through an application.</p>
+            <h6 class="center" style="font-weight: bold">Development Status</h6>
+            <p class="light center-align">Has been running , kindly check my prototype by klik the picture to see.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+
+  <div class="parallax-container valign-wrapper" style="min-height:300px">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Lalala hehehe</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    <%= image_tag("background2.jpg")  %>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Market</h4>
+          <p class="left-align light">Our segmentation will target tourists, especially in Indonesia, aged 15-40 years old who interested in traveling with an income above IDR 100.000 - IDR 4 million. We will target the market using social media as the main marketing and we would partner with Puteri Indonesia who serves as the ambassador of their province, especially Indonesia to reach tourists also from whole the world. We positioning the image of the "local tourism app" in our various marketing as an end-to-end travel and lifestyle booking platform for the Indonesian region.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-panel red lighten-2 center-align" style="color:white; font-size:30px; font-weight:bold">SPESIFICATION</div>
+  <%= image_tag("spesification.jpg") %>
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h6 style="font-weight:bold">A NATURE-CULTURAL TRIP</h6>
+          <p class="left-align light">A nature-cultural trip is focused on highlighting: nature, traditions, histories and knowledge from each destiny such as language, handicrafts, etc… PARADiSE offers nature-cultural experiences for two main reasons:</p>
+          <ol>
+            <li class="left-align light" style="padding-left:0.5em">
+              <span style="font-weight:bold">For the traveler:</span> Make the journey a special experience to appreciate the material and intangible elements of the site that do not exist anywhere else in the world in the same way.
+            </li>
+            <li class="left-align light" style="padding-left:0.5em">
+              <span style="font-weight:bold">For the people of the community:</span> Revaluate its heritage and its cultural and natural resources. By gaining a benefit from expressing what they are and what they know, their assets are self-assessed and their self-esteem is strengthened. Both young and old alike consider opportunities not only to preserve but also to expand (regenerate) their community's existence, traditions and culture.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-panel red lighten-2 center-align" style="color:white; font-size:30px; font-weight:bold">HOW DOES IT WORKS?</div>
+
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m5 center">
+            <br><br>
+          <%= image_tag("travel.png") %>
+        </div>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <br><br>
+            <h5 class="center" style="font-weight: bold">How to travel with PARADiSE?</h5>
+
+            <p class="light center-align" style="font-style: italic; text-align:justify">You are part of a network of tourists and societies working to establish fairer and more sustainable tourism when you book a trip with one of our hosts. We advise you in PARADiSE and will arrange the trip along with your host according to your needs. At the time of your arrival in the group he or she will take care of everything you need to have an exceptional experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m5 center">
+            <br><br>
+          <%= image_tag("payment.png") %>
+        </div>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <br><br>
+            <h5 class="center" style="font-weight: bold">Where does my payment go?</h5>
+
+            <p class="light center-align" style="font-style: italic; text-align:justify">75% of the payment goes directly to sponsors, families and local product and service providers. The remaining 25% per cent is intended to finance PARADiSE's money transfer expenses and operational expenses to sustain and extend our network.We want to support the community as a whole and create common interest, so in certain communities a portion of the money goes to the Collective Cultural and Environmental Project Fund.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="page-footer red lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <%= javascript_include_tag "application" %>
+  <%= javascript_tag "materialize" %>
+  <%= javascript_tag "init" %>
+
+  </body>
+</html>
