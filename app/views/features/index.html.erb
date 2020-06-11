@@ -8,42 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
-  <ul id="dropdown1" class="dropdown-content">
-    <li class="red-text text-lighten-2">
-      <%= link_to "Summary & Evaluation", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
-    </li>
-    <li>
-      <%= link_to "Questionnaire - General", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
-    </li>
-    <li>
-      <%= link_to "Questionnaire - PARADiSE Market", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
-    </li>
-    <li>
-      <%= link_to "Questionnaire - No Traveling Market", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
-    </li>
-    <li>
-      <%= link_to "In-Depth-Interview", {:controller => 'homepage', :action => "index" }, {:class => "red-text text-lighten-2"} %>
-    </li>
-  </ul>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper">
-    <%= link_to "PARADiSE - By Local From Local", {:controller => 'homepage', :action => "index" }, {:class => "brand-logo", :id => "logo-container", :style => "padding-left:2%" } %>
+  <nav role="navigation">
+    <div class="nav-wrapper container red lighten-2">
+    <%= link_to "PARADiSE - By Local From Local", {:controller => 'homepage', :action => "index" }, {:class => "brand-logo white-text", :id => "logo-container" } %>
       <ul class="right hide-on-med-and-down">
         <li>
-          <%= link_to "Home", {:controller => 'homepage', :action => "index" } %>
+          <%= link_to "Home", {:controller => 'homepage', :action => "index" }, { :class => "white-text" } %>
         </li>
         <li>
-          <%= link_to "Features", {:controller => 'features', :action => "index" } %>
+          <%= link_to "Features", {:controller => 'features', :action => "index" }, { :class => "white-text" } %>
         </li>
         <li>
-          <%= link_to "MVP", {:controller => 'homepage', :action => "index" } %>
-        </li>
-        <li>
-          <%= link_to "Feasibility", {:controller => 'homepage', :action => "index" } %>
-        </li>
-        <li><a class="dropdown-trigger" data-target="dropdown1">Market Survey<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li>
-          <%= link_to "About Us", {:controller => 'homepage', :action => "index" } %>
+          <%= link_to "LOKADiSE", {:controller => 'lokadise', :action => "index" }, { :class => "white-text" } %>
         </li>
       </ul>
 
@@ -55,32 +31,25 @@
           <%= link_to "Features", {:controller => 'features', :action => "index" } %>
         </li>
         <li>
-          <%= link_to "MVP", {:controller => 'homepage', :action => "index" } %>
-        </li>
-        <li>
-          <%= link_to "Feasibility", {:controller => 'homepage', :action => "index" } %>
-        </li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Market Survey<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li>
-          <%= link_to "About Us", {:controller => 'homepage', :action => "index" } %>
+          <%= link_to "LOKADiSE", {:controller => 'lokadise', :action => "index" } %>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container" style=" min-height: 300px;">
+  <div id="index-banner" class="parallax-container" style=" min-height: 450px;">
     <div class="section no-pad-bot">
       <div class="container">
-      <h5 style="opacity:0">weird</h5>
-        <h1 class="center white-text text-lighten-2">Prototype Features</h1>
+      <h1 style="opacity:0">weird</h1>
+        <h1 class="center red-text text-lighten-2">Prototype Features</h1>
 
         <br><br>
 
       </div>
     </div>
     <div class="parallax">
-        <%= image_tag("background1.jpg")  %>
+        <%= image_tag("background17.jpg")  %>
     </div>
   </div>
 
@@ -89,7 +58,7 @@
       <div class="row">
         <div class="col s12 m5 center">
             <br><br>
-          <%= image_tag("sign_up.png", :size => "250x480") %>
+          <%= link_to image_tag("sign_up.png", :size => "250x480"), 'https://marvelapp.com/113c7c94/screen/67632684', :target => 'blank' %>
         </div>
         <div class="col s12 m6">
           <div class="icon-block">
@@ -127,7 +96,7 @@
       <div class="row">
         <div class="col s12 m5 center">
             <br><br>
-          <%= image_tag("log_in.png", :size => "250x480") %>
+          <%= link_to image_tag("log_in.png", :size => "250x480"), 'https://marvelapp.com/113c7c94/screen/67632684', :target => 'blank' %>
         </div>
         <div class="col s12 m6">
           <div class="icon-block">
@@ -162,7 +131,7 @@
       <div class="row">
         <div class="col s12 m5 center">
             <br><br>
-          <%= image_tag("home.png", :size => "250x480") %>
+          <%= link_to image_tag("home.png", :size => "250x480"), 'https://marvelapp.com/113c7c94/screen/67632684', :target => 'blank' %>
         </div>
         <div class="col s12 m6">
           <div class="icon-block">
@@ -191,38 +160,19 @@
       </div>
     </div>
 
-  <footer class="page-footer red lighten-2">
+    <footer class="page-footer red lighten-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+          <h5 class="white-text">By Local, From Local</h5>
+          <p class="grey-text text-lighten-4"></p>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by PARADiSE Team using 
+      <a class="brown-text text-lighten-3" href="http://materializecss.com" target="blank">Materialize</a>
       </div>
     </div>
   </footer>

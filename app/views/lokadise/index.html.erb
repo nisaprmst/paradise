@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= stylesheet_link_tag "style" %>
+    <%= javascript_tag "materialize" %>
+    <%= javascript_tag "init" %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper container red lighten-2">
+    <%= link_to "PARADiSE - By Local From Local", {:controller => 'homepage', :action => "index" }, {:class => "brand-logo white-text", :id => "logo-container" } %>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <%= link_to "Home", {:controller => 'homepage', :action => "index" }, { :class => "white-text" } %>
+        </li>
+        <li>
+          <%= link_to "Features", {:controller => 'features', :action => "index" }, { :class => "white-text" } %>
+        </li>
+        <li>
+          <%= link_to "LOKADiSE", {:controller => 'lokadise', :action => "index" }, { :class => "white-text" } %>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <%= link_to "Home", {:controller => 'homepage', :action => "index" } %>
+        </li>
+        <li>
+          <%= link_to "Features", {:controller => 'features', :action => "index" } %>
+        </li>
+        <li>
+          <%= link_to "LOKADiSE", {:controller => 'lokadise', :action => "index" } %>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container" style=" min-height: 450px;">
+    <div class="section no-pad-bot">
+      <div class="container">
+      <h1 style="opacity:0">weird<h1>
+        <h1 class="center red-text text-lighten-2">LOKADiSE</h1>
+        <div class="row center">
+        <br><br>
+        </div>
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax">
+        <%= image_tag("background6.jpg")  %>
+    </div>
+  </div>
+
+
+  <br><br>                                                                                 
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12">
+          <h5 class="center-align red-text text-lighten-2" style="font-weight:bold">
+            Then, how do we create a small touristic business if the village may only consists of 15 local people?
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6 center-align">
+          <%= image_tag("lokadise.jpg", :size => "360x270") %>
+        </div>
+        <div class="col s12 m6 center-align">
+          <br><br><br>
+          <p class="center-align" style="font-size:4vmin">
+            The solution is <span class="red-text text-lighten-2" style="font-weight:bold">LOKADiSE</span>!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h2 class="header col s12 light">EXPERIENCES</h2>
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    <%= image_tag("background5.jpg")  %>
+    </div>
+  </div>
+  
+  <br><br>
+  <div class="container">
+    <div class="section center-align">
+
+      <div class="row center-align">
+        <div class="col s12 m5ths">
+            <%= image_tag("accomodation.jpg", :size => "100x100") %>
+            <p class="center-align">Accomodation</p>
+        </div>
+        <div class="col s12 m5ths">
+            <%= image_tag("tracks.jpg", :size => "100x100") %>
+            <p class="center-align">Tracks</p>
+        </div>
+        <div class="col s12 m5ths">
+            <%= image_tag("experiences.jpg", :size => "100x100") %>
+            <p class="center-align">Experiences</p>
+        </div>
+        <div class="col s12 m5ths">
+            <%= image_tag("culinary.jpg", :size => "100x100") %>
+            <p class="center-align">Culinary</p>
+
+        </div>
+        <div class="col s12 m5ths">
+            <%= image_tag("course.jpg", :size => "100x100") %>
+            <p class="center-align">Course</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m12 ">
+          <h6 class="center-align light">
+          Using our travel design methodology, expected in one week, 
+          <span class="red-text text-lighten-2" style="font-weight:bold">LOKADiSE</span> is ready to provide 
+          <span class="red-text text-lighten-2">an extraordinary travel experience.</span> The experiences are 
+          <span class="red-text text-lighten-2">Unique, Secure, and All-Inclusive.</span>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h2 class="header col s12 light">FACILITIES</h2>
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    <%= image_tag("background9.jpg")  %>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m12 ">
+          <p class="left-align light" style="font-size:2.5vmin">
+          For entry-level enterpreneurs, it is not easy for them to pay reservation platform to provide promotion and payment facilities. 
+          <span class="red-text text-lighten-2" style="font-weight:bold">LOKADiSE</span> provide following facilities so local enterpreneurs only have to pay variable cost for every trip sold.
+          </p>
+          <p class="left-align light" style="font-size:2.5vmin">
+          <i class=" material-icons">payment</i>
+          <span style="padding-left:3%">Payment Facility<span>
+          </p>
+          <p class="left-align light" style="font-size:2.5vmin">
+          <i class=" material-icons">person</i>
+          <span style="padding-left:3%">Customer Service</span>
+          </p>
+          <p class="left-align light" style="font-size:2.5vmin">
+          <i class=" material-icons">phone_iphone</i>
+          <span style="padding-left:3%">Reservation System</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <footer class="page-footer red lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">By Local, From Local</h5>
+          <p class="grey-text text-lighten-4"></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by PARADiSE Team using 
+      <a class="brown-text text-lighten-3" href="http://materializecss.com" target="blank">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <%= javascript_include_tag "application" %>
+
+  </body>
+</html>
